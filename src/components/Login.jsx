@@ -11,7 +11,6 @@ export default function Login() {
 
 	return (
 		<>
-			<Navegacao />
 			<div>
 				<form onSubmit={Enviar}>
 					<h1 className='titulo'>Login</h1>
