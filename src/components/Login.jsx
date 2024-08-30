@@ -6,7 +6,7 @@ export default function Login() {
 		e.preventDefault();
 		if (nome == "l" && senha == "s") { localStorage.setItem('autentico', true); }
 		else { localStorage.setItem('autentico', false); defNome(''); defSenha(''); }
-		window.location.href = "/";
+		window.location.href = "/FS-MultiApp";
 	}
 
 	return (

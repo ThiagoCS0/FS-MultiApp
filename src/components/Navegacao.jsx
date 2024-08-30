@@ -19,7 +19,7 @@ export default function Navegacao() {
 						</ul>
 					</li>
 					<li> <Link className="links" onClick={() => { setSubNv(false) }} to="/abcd">ERRO</Link> </li>
-					<li> <Link className="links" onClick={() => { setSubNv(false); localStorage.setItem('autentico', false); window.location.href = '/'; }}>SAIR</Link> </li>
+					<li> <Link className="links" onClick={() => { setSubNv(false); localStorage.setItem('autentico', false); window.location.href = '/FS-MultiApp'; }}>SAIR</Link> </li>
 				</ul>}
 		</nav>
 	)
