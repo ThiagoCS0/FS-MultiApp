@@ -24,7 +24,7 @@ const rotas = createBrowserRouter([
       { path: '/ipinfor', element: <IPInfor /> },
       { path: '/FS-MultiApp/qrcode', element: <QRCode /> },
       { path: '/qrcode', element: <QRCode /> },
-      { path: '/FS-MultiApp/tradutor', element: <Tradutor /> }
+      { path: '/FS-MultiApp/tradutor', element: <Tradutor /> },
       { path: '/tradutor', element: <Tradutor /> }
     ]
   }
