@@ -1,5 +1,4 @@
 import ReactDOM from 'react-dom/client'
-import React, { StrictMode, useContext } from 'react'
 import EstiloGlobal from './components/EstiloGlogal'
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import Filmes from './components/Filmes';
@@ -29,8 +28,6 @@ const rotas = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <EstiloGlobal />
-    <ProverTema>
       <RouterProvider router={rotas} />
-    </ProverTema>
   </React.StrictMode>
 )
