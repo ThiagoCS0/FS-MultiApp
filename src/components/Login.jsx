@@ -12,7 +12,6 @@ export default function Login() {
 	return (
 		<>
 						<div>
-      {autentico == "true" && <Navegacao />}
 						<form onSubmit={Enviar}>
 					<h1 className='titulo'>Login</h1>
 					<input name="nome" type="text" value={nome} onChange={(e) => { defNome(e.target.value) }} placeholder="Nome" autoComplete="username" required />
