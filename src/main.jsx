@@ -16,11 +16,16 @@ const rotas = createBrowserRouter([
   {
     path: '/', element: <App />, errorElement: <Erro />, children: [
       { path: '/FS-MultiApp', element: <App /> },
+      { path: '/login', element: <Login /> },
       { path: '/FS-MultiApp/login', element: <Login /> },
       { path: '/FS-MultiApp/filmes', element: <Filmes /> },
+      { path: '/filmes', element: <Filmes /> },
       { path: '/FS-MultiApp/ipinfor', element: <IPInfor /> },
+      { path: '/ipinfor', element: <IPInfor /> },
       { path: '/FS-MultiApp/qrcode', element: <QRCode /> },
+      { path: '/qrcode', element: <QRCode /> },
       { path: '/FS-MultiApp/tradutor', element: <Tradutor /> }
+      { path: '/tradutor', element: <Tradutor /> }
     ]
   }
 ])
