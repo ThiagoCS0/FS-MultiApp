@@ -6,13 +6,13 @@ export default function Login() {
 		e.preventDefault();
 		if (nome == "l" && senha == "s") { localStorage.setItem('autentico', true); }
 		else { localStorage.setItem('autentico', false); defNome(''); defSenha(''); }
-		window.location.href = "/FS-MultiApp/";
+		window.location.href = "/FS-MultiApp/filmes";
 	}
 
 	return (
 		<>
-						<div>
-						<form onSubmit={Enviar}>
+			<div>
+				<form onSubmit={Enviar}>
 					<h1 className='titulo'>Login</h1>
 					<input name="nome" type="text" value={nome} onChange={(e) => { defNome(e.target.value) }} placeholder="Nome" autoComplete="username" required />
 					<input name="senha" type="password" value={senha} onChange={(e) => { defSenha(e.target.value) }} placeholder="Senha" autoComplete="current-password" required />

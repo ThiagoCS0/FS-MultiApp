@@ -26,7 +26,6 @@ nav{
 ul{
 	width:100%; 
 	display:flex; 
-	border: 1px solid;
 	height: fit-content;
 	justify-content:center;
 }
@@ -67,8 +66,8 @@ form {
 	width: 70vw;
 	display: flex;
 	position: absolute;
-	height: fit-content;
 	align-items: center;
+	height: fit-content;
 	flex-direction: column;
 	justify-content: center;
 }
@@ -130,14 +129,17 @@ div {
 	display: flex;
 	justify-content: start;
 }
+
 .selecionavel{
 	user-select: all;
 }
+
 .divResultadoH img{
 	background-color: #222;
 	height:350px;
 	width:250px;
 }
+
 .divResultadoV{
 	display: flex;
 	padding: 10px 0;
@@ -173,10 +175,10 @@ button {
 	font-size: xx-large;
 	font-weight: bolder;
 	align-items: center;
-  animation-duration: 1s;
+ animation-duration: 1s;
 	justify-content: center;
-  animation-name: erroCor;
-  animation-iteration-count: infinite;
+ animation-name: erroCor;
+ animation-iteration-count: infinite;
 }
 
 .rodape{
