@@ -16,7 +16,6 @@ const rotas = createBrowserRouter([
   {
     path: '/', element: <App />, errorElement: <Erro />, children: [
       { path: '/FS-MultiApp/', element: <App /> },
-      { path: '/FS-MultiApp/filmes', element: <App /> },
       { path: '/login', element: <Login /> },
       { path: '/FS-MultiApp/login', element: <Login /> },
       { path: '/FS-MultiApp/filmes', element: <Filmes /> },
