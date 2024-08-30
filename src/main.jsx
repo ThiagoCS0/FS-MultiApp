@@ -14,9 +14,7 @@ const autentico = localStorage.getItem('autentico');
 
 const rotas = createBrowserRouter([
   {
-    path: '/FS-MultiApp', element: <App />, errorElement: <Erro />, children: [
-      { path: '/', element: <App /> },
-      { path: '/FS-MultiApp', element: <App /> },
+    path: '/', element: <App />, errorElement: <Erro />, children: [
       { path: '/login', element: <Login /> },
       { path: '/filmes', element: <Filmes /> },
       { path: '/ipinfor', element: <IPInfor /> },
