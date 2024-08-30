@@ -11,7 +11,7 @@ export default function App() {
     localStorage.setItem('autentico',false);}
   return (
     <>
-      <Navegacao />
+      {autentico == "true" && <Navegacao />}
       {autentico == "true" ? <Outlet /> : <Login />}
     </>
   )
