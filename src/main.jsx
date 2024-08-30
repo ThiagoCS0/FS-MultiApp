@@ -1,3 +1,4 @@
+import React from 'react';
 import ReactDOM from 'react-dom/client'
 import EstiloGlobal from './components/EstiloGlogal'
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
@@ -8,19 +9,18 @@ import QRCode from './components/QRCode';
 import Login from './components/Login'
 import Erro from './components/Erro';
 import App from './App'
-import { ProverTema } from './context/Tema';
 
 const autentico = localStorage.getItem('autentico');
 
 const rotas = createBrowserRouter([
   {
     path: '/', element: <App />, errorElement: <Erro />, children: [
-      { path: '/FS-MultiApp', element: <Login /> },
-      { path: '/login', element: <Login /> },
-      { path: '/filmes', element: <Filmes /> },
-      { path: '/ipinfor', element: <IPInfor /> },
-      { path: '/qrcode', element: <QRCode /> },
-      { path: '/tradutor', element: <Tradutor /> }
+      { path: '/FS-MultiApp', element: <App /> },
+      { path: '/MultiApp/login', element: <Login /> },
+      { path: '/MultiApp/filmes', element: <Filmes /> },
+      { path: '/MultiApp/ipinfor', element: <IPInfor /> },
+      { path: '/MultiApp/qrcode', element: <QRCode /> },
+      { path: '/MultiApp/tradutor', element: <Tradutor /> }
     ]
   }
 ])
