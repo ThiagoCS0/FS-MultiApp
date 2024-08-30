@@ -4,9 +4,9 @@ export default function Login() {
 	const [nome, defNome] = useState(''), [senha, defSenha] = useState('');
 	const Enviar = (e) => {
 		e.preventDefault();
-		if (nome == "l" && senha == "s") { localStorage.setItem('autentico', true);		window.location.href = "/"; }
-		else { localStorage.setItem('autentico', false); defNome(''); defSenha(''); 	window.location.href = "/FS-MultiApp";}
-	
+		if (nome == "l" && senha == "s") { localStorage.setItem('autentico', true); }
+		else { localStorage.setItem('autentico', false); defNome(''); defSenha(''); }
+		window.location.href = "/FS-MultiApp";	
 	}
 
 	return (
