@@ -19,7 +19,7 @@ export default function Login() {
 					<input name="nome" type="text" value={nome} onChange={(e) => { defNome(e.target.value) }} placeholder="Nome" autoComplete="username" required />
 					<input name="senha" type="password" value={senha} onChange={(e) => { defSenha(e.target.value) }} placeholder="Senha" autoComplete="current-password" required />
 					<button type="submit" style={{ alignSelf: 'end' }}>Acessar</button>
-				<p style={{ position: 'absolute', left:'20px', bottom:'20px'}}>Login: <span style={{ userSelect:'all'}}>Thiago</span> - Senha: <span style={{ userSelect:'all'}}>Thiago</span></p>
+				<p style={{ position: 'absolute', left:'20px', bottom:'20px'}}>Login: <span>Thiago</span> - Senha: <span>Thiago</span></p>
 				</form>
 			</div>
 		</>

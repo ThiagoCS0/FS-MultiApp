@@ -9,6 +9,7 @@ export default function QRCode() {
 		<Navegacao />
 		<div className='divPrincipal'>
 			<h1 className='titulo'>QRCode</h1>
+			<h3>Gerador de QRCode com base no texto digitado!</h3>
 			<input type="text" value={texto} onChange={e => { defTexto(e.target.value) }} />
 			<QRCodeSVG value={texto} />
 		</div>

@@ -41,6 +41,7 @@ li{
 
 span{
 	color: #C90;
+	user-select: all;
 }
 
 .links {

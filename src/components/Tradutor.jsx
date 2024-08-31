@@ -3,10 +3,10 @@ import { useState } from "react";
 import Navegacao from './Navegacao';
 
 export default function Tradutor() {
-
 	const [texto, defTexto] = useState(''); const [textoSaida, defSaida] = useState('');
 	const [lingOrigem, defLingOrigem] = useState('en'); const [lingSaida, defLingSaida] = useState('pt');
-
+	const [visivel,defVisivel]=useState(true);
+	setTimeout(() => {defVisivel(false)}, 4000);
 	const Traduzir = async () => {
 		try {
 			const resp = await axios.get(`https://api.mymemory.translated.net/get`, { params: { q: texto, langpair: `${lingOrigem}|${lingSaida}` } });
@@ -23,6 +23,7 @@ export default function Tradutor() {
 		<Navegacao />
 		<div className='divPrincipal'>
 			<h1 className='titulo'>Tradutor</h1>
+			{visivel && <p>clique no <span>"&#8596; para &#8596;"</span> para alternar</p>}
 			<div id='divPerguntaH'>
 				Do <select value={lingOrigem} onChange={(e) => { defLingOrigem(e.target.value) }}>
 					<option value="en">English</option><option value="es">Spanish</option>
