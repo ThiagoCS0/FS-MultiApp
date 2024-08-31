@@ -1,3 +1,4 @@
+import Navegacao from './Navegacao';
 import { useState } from 'react'
 import axios from 'axios';
 
@@ -14,6 +15,8 @@ export default function IPInfo() {
 	}
 	// ipInfor.lookupASN("AS7922").then((resp) => { defSaida(resp); })
 	return (
+		<>		
+		<Navegacao />
 		<div className='divPrincipal'>
 			<h1 className='titulo'>IP - Busca de infomações</h1>
 			<div className='divEntrada'>
@@ -38,5 +41,6 @@ export default function IPInfo() {
 				</div>
 			}
 		</div >
+				</>
 	)
 }

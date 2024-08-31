@@ -1,5 +1,4 @@
 import React from 'react';
-import Navegacao from './components/Navegacao';
 import Login from './components/Login'
 import { Outlet } from 'react-router-dom';
 
@@ -11,7 +10,6 @@ export default function App() {
     localStorage.setItem('autentico',false);}
   return (
     <>
-		{autentico == "true" && <Navegacao />}
     {autentico == "true" ? <Outlet /> : <Login />}
     </>
   )

@@ -1,12 +1,15 @@
-import { useState } from 'react';
-import Navegacao from './Navegacao';
+import { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+
 export default function Login() {
 	const [nome, defNome] = useState(''), [senha, defSenha] = useState('');
 	const Enviar = (e) => {
 		e.preventDefault();
-		if (nome == "l" && senha == "s") { localStorage.setItem('autentico', true); }
-		else { localStorage.setItem('autentico', false); defNome(''); defSenha(''); }
-		window.location.href = "/FS-MultiApp";	
+		if (nome == "l" && senha == "s") {
+			localStorage.setItem('autentico', true);
+			window.location.reload();
+			}
+		else { localStorage.setItem('autentico', false); defNome(''); defSenha('');}
 	}
 
 	return (

@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useState } from "react"
+import Navegacao from './Navegacao';
 
 
 export default function Filmes() {
@@ -16,6 +17,7 @@ export default function Filmes() {
 	}
 	return (
 		<>
+		<Navegacao />
 			<div className="divPrincipal">
 				<h1 className="titulo">Filmes - Lista de filmes</h1>
 				<div className="divEntrada">

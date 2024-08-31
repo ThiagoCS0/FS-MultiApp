@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { useState } from "react";
+import Navegacao from './Navegacao';
 
 export default function Tradutor() {
 
@@ -19,6 +20,8 @@ export default function Tradutor() {
 		defLingOrigem(lingS);
 	}
 	return (
+		<>
+		<Navegacao />
 		<div className='divPrincipal'>
 			<h1 className='titulo'>Tradutor</h1>
 			<div id='divPerguntaH'>
@@ -44,5 +47,6 @@ export default function Tradutor() {
 				</div>
 			</div>
 		</div >
+		</>
 	)
 }
