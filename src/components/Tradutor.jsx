@@ -9,8 +9,7 @@ export default function Tradutor() {
 
 	const Traduzir = async () => {
 		try {
-			// const resp = await axios.get(`https://api.mymemory.translated.net/get?q=${Hello%20World}!&langpair=${en}|${it}`)
-			const resp = await axios.get(`https://api.mymemory.translated.net/get`, { params: { q: texto, langpair: `${lingOrigem}|${lingSaida}` } }); /*Tudo bem*/
+			const resp = await axios.get(`https://api.mymemory.translated.net/get`, { params: { q: texto, langpair: `${lingOrigem}|${lingSaida}` } });
 			defSaida(resp.data.responseData.translatedText);
 		} catch (error) { defSaida(`Erro ao traduzir: "${error}"`); }
 	}

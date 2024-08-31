@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Login() {
 	const [nome, defNome] = useState(''), [senha, defSenha] = useState('');
