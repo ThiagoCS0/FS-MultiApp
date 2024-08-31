@@ -10,8 +10,6 @@ import Login from './components/Login'
 import Erro from './components/Erro';
 import App from './App'
 
-const autentico = localStorage.getItem('autentico');
-
 const rotas = createBrowserRouter([
   {
     path: '/', element: <App />, errorElement: <Erro />, children: [
