@@ -4,7 +4,7 @@ export default function Login() {
 	const [nome, defNome] = useState(''), [senha, defSenha] = useState('');
 	const Enviar = (e) => {
 		e.preventDefault();
-		if (nome == "l" && senha == "s") {
+		if (nome == "Thiago" && senha == "Thiago") {
 			localStorage.setItem('autentico', true);
 			window.location.reload();
 			}
@@ -20,6 +20,7 @@ export default function Login() {
 					<input name="senha" type="password" value={senha} onChange={(e) => { defSenha(e.target.value) }} placeholder="Senha" autoComplete="current-password" required />
 					<button type="submit" style={{ alignSelf: 'end' }}>Acessar</button>
 				</form>
+				<p>Login: Thiago - Senha: Thiago </p>
 			</div>
 		</>
 	)
